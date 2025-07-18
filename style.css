@@ -1,0 +1,27 @@
+{
+    margin: 0;
+    padding: 0;
+   box-sizing: border-box; 
+}
+
+body{
+    background-color:bisque;
+    text-align: center;
+    line-height: 2.1;
+
+}
+
+
+.hero img{
+    border-radius: 50%;
+}
+
+.acent{
+    color: blue;
+}
+
+
+
+
+
+
