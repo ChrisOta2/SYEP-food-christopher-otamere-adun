@@ -8,7 +8,6 @@ body{
     background-color:bisque;
     text-align: center;
     line-height: 2.1;
-
 }
 
 
@@ -16,12 +15,13 @@ body{
     border-radius: 50%;
 }
 
-.acent{
-    color: blue;
+.accent {
+    color: rgb(181, 60, 0);
+    font-style: italic;
+    font-weight: bold;
 }
 
-
-
-
-
-
+img {
+    width: 300;
+    height: auto;
+}
