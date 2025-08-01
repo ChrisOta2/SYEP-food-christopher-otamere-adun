@@ -26,7 +26,8 @@ img {
     height: auto;
 }
 
-@media screen (max-width: 768px){
+@media screen {
+     (max-width: 768px)
     body(background-color:red)
 }
 
@@ -37,12 +38,9 @@ img {
    flex-wrap: wrap;
 }
 
-.grid div{
+.grid div {
     background-color:azure;
     border-radius: 100px;
     padding: 10px;
     min-width: 80px;
 }
-
-
-
