@@ -1,3 +1,95 @@
+const reviews = [
+    {
+        id 1,
+        name: 'Susan Smith'
+        img: '#',
+        text:''
+    },
+];
+    {
+        id 2,
+        name: 'peter john'
+        job; "Teacher"
+        img: '#',
+        text:'blah blah blah'
+    }
+    
+        
+    {
+        id 2,
+        name: 'peter john'
+        job; "Teacher"
+        img: '#',
+        text:'blah blah blah'
+    };
+
+:const img = document.getElementsByid("person-img");
+const author = document.getElementsByid ('job');
+const job = document.getElementsByid('job');
+const info = document.getElementsByid(info);
+
+const previts = document.getElementsByid('.prev-btn');
+const previts = document.getElementsByid('.next-btn');
+
+let currentItem = 0;
+//Load initial item
+window.addEventListener('DOMContestLoaded',)
+    const item = reviews[currentItem];
+    img, src = item.img;
+    author.textContet = item,text
+
+
+
+    
+
+    function showPerson(person){
+        const item = review[person];
+        img.src = item.img;
+        author.textContent = item.name;
+        job.textContent = item.job;
+        info.textContent = item.item;
+    }
+
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*
 console.log("Hello World");
 
 //string has quotes/Number no quotes;
@@ -35,3 +127,4 @@ if (hour<12){
 }
 
 document.getElementById("greeting").innerText = greeting;
+/*
