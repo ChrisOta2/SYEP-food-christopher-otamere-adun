@@ -52,5 +52,5 @@ img {
   margin: 20px auto;             /* Space outside, auto centers it */
   max-width: 800px;              /* Keeps it from stretching too wide */
   background-color: #ffc97d;     /* Light background for contrast */
-  ; /* Soft shadow */
+  ;
 }
