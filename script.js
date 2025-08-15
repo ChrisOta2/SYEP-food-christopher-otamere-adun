@@ -1,57 +1,65 @@
+console.log("script.js loaded");
+
 const reviews = [
-    {
-        id 1,
-        name: 'Susan Smith'
-        img: '#',
-        text:''
-    },
+  {
+    id: 1,
+    name: "Judith ",
+    job: "Social Worker",
+    img: "https://randomuser.me/api/portraits/women/44.jpg",
+    text: "Christopher is bright, caring, and full of ambition. He is passionate about studying nursing and is eager to help others and learn new things. I’m proud of the kind, thoughtful young man he’s becoming.",
+  },
+  {
+    id: 2,
+    name: "Adesuwa Sheriff",
+    job: "Nurse",
+    img: "https://randomuser.me/api/portraits/men/34.jpg",
+    text: "Chris is a bright, driven, and caring individual with a passion for learning and helping others. His determination and curiosity make him a natural leader, and his kindness leaves a lasting impact on everyone he meets.", 
+
+  },
 ];
-    {
-        id 2,
-        name: 'peter john'
-        job; "Teacher"
-        img: '#',
-        text:'blah blah blah'
-    }
-    
-        
-    {
-        id 2,
-        name: 'peter john'
-        job; "Teacher"
-        img: '#',
-        text:'blah blah blah'
-    };
 
-:const img = document.getElementsByid("person-img");
-const author = document.getElementsByid ('job');
-const job = document.getElementsByid('job');
-const info = document.getElementsByid(info);
+const img = document.getElementById("person-img");
+const author = document.getElementById("author");
+const job = document.getElementById("job");
+const info = document.getElementById("info");
 
-const previts = document.getElementsByid('.prev-btn');
-const previts = document.getElementsByid('.next-btn');
+const prevBtn = document.querySelector(".prev-btn");
+const nextBtn = document.querySelector(".next-btn");
 
 let currentItem = 0;
-//Load initial item
-window.addEventListener('DOMContestLoaded',)
-    const item = reviews[currentItem];
-    img, src = item.img;
-    author.textContet = item,text
+
+window.addEventListener("DOMContentLoaded", function () {
+  showPerson(currentItem);
+});
+
+function showPerson(person) {
+  const item = reviews[person];
+  img.src = item.img;
+  author.textContent = item.name;
+  job.textContent = item.job;
+  info.textContent = item.text;
+}
+
+nextBtn.addEventListener("click", function () {
+  currentItem++;
+  if (currentItem > reviews.length - 1) {
+    currentItem = 0;
+  }
+  showPerson(currentItem);
+});
+
+prevBtn.addEventListener("click", function () {
+  currentItem--;
+  if (currentItem < 0) {
+    currentItem = reviews.length - 1;
+  }
+  showPerson(currentItem);
+});
 
 
 
     
 
-    function showPerson(person){
-        const item = review[person];
-        img.src = item.img;
-        author.textContent = item.name;
-        job.textContent = item.job;
-        info.textContent = item.item;
-    }
-
-
-    
 
 
 
@@ -88,8 +96,7 @@ window.addEventListener('DOMContestLoaded',)
 
 
 
-
-/*
+window.addEventListener("DOMContentLoaded", function () {
 console.log("Hello World");
 
 //string has quotes/Number no quotes;
@@ -127,4 +134,4 @@ if (hour<12){
 }
 
 document.getElementById("greeting").innerText = greeting;
-/*
+});
